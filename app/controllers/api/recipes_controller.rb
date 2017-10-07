@@ -10,11 +10,11 @@ class Api::RecipesController < ApplicationController
     end
 
     def create
-      @recipe = Recipe.new(recipe_params)
-      if @recipe.save
+      recipe = Recipe.new(recipe_params)
+      if recipe.save
         render json: @recipe
       else
-        render json: {message: @recipe.errors}, status: 400
+        render json: {message: recipe.errors}, status: 400
       end
     end
 
