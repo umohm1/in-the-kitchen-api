@@ -12,7 +12,7 @@ class Api::RecipesController < ApplicationController
     def create
       recipe = Recipe.new(recipe_params)
       if recipe.save
-        render json: @recipe
+        render json: recipe
       else
         render json: {message: recipe.errors}, status: 400
       end
@@ -22,7 +22,7 @@ class Api::RecipesController < ApplicationController
       if @recipe.update(recipe_params)
         render json: @recipe
       else
-        render json: {message: @recipe.errors}, status: 400
+        render json: {message: recipe.errors}, status: 400
       end
     end
 
@@ -38,7 +38,7 @@ class Api::RecipesController < ApplicationController
     private
 
     def set_recipe
-      @recipe = Recipe.find(params[:id])
+      @recipe = Recipe.find_by(id: params[:id])
     end
 
     def recipe_params
