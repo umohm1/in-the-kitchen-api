@@ -1,24 +1,21 @@
-# README
+# In The Kitchen
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In the Kitchen is a single page app built with a Rails API back-end and React/Redux front-end. It provides the ability to log recipe ideas easily. 
 
-Things you may want to cover:
+## Installation & Usage
 
-* Ruby version
+Clone down this repo along with the client side and do the following commands:
 
-* System dependencies
+$ cd in-the-kitchen-api
+$ bundle install
+$ rails s -p 3001
 
-* Configuration
+$ cd in-the-kitchen-client
+$ npm install
+$ npm start
 
-* Database creation
+## Contributing
+Bug reports and pull requests are welcome on GitHub at [this project's repository](https://github.com/umohm1/in-the-kitchen-client). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org/) code of conduct.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# License
+This Web Application is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
