@@ -2,6 +2,10 @@
 
 In the Kitchen is a single page app built with a Rails API back-end and React/Redux front-end. It provides the ability to log recipe ideas easily.
 
+## Screenshot
+
+![image](https://i.imgur.com/g7P5cnb.jpg)
+
 ## Installation & Usage
 
 Clone down this repo along with the client side and do the following commands:
